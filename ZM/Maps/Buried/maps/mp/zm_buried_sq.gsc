@@ -949,13 +949,13 @@ devgui_sq( cmd )
         case "nc_napp":
         case "nc_off":
         case "nc_on":
-            pindex = getdvarint( #"_id_DAD9AAFF" );
+            pindex = getdvarint( #"dg_sq_player" );
 
             if ( !isdefined( pindex ) || pindex < 1 )
                 pindex = 1;
 
             sq_player = level.sq_players[pindex - 1];
-            sq_level = getdvar( #"_id_2685E710" );
+            sq_level = getdvar( #"dg_sq_map" );
             sq_set_stat( sq_player, sq_level, cmd_strings[0] );
             break;
         case "sq_start_stage_bt":

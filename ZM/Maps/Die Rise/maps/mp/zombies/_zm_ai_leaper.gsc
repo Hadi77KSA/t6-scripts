@@ -630,7 +630,7 @@ leaper_round_spawning()
         num_player_valid = get_number_of_valid_players();
         per_player = 2;
 /#
-        if ( getdvarint( #"_id_5A273E4B" ) == 2 )
+        if ( getdvarint( #"scr_leaper_debug" ) == 2 )
             per_player = 1;
 #/
 
@@ -1126,7 +1126,7 @@ leaper_spawn_failsafe()
             else
             {
 /#
-                if ( getdvarint( #"_id_5A273E4B" ) == 1 )
+                if ( getdvarint( #"scr_leaper_debug" ) == 1 )
                     iprintln( "leaper tried melee" );
 #/
                 self.melee_attack = 0;
