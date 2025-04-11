@@ -473,7 +473,7 @@ bus_attack()
 
         attack_struct = random_attack_struct[i];
 /#
-        window = getdvarint( #"_id_5628DC9F" );
+        window = getdvarint( #"scr_avogadro_bus_window" );
 
         if ( window >= 0 )
             attack_struct = bus_attack_struct[window];
